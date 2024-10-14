@@ -12,4 +12,14 @@ public static class D
         Debug.Log(s);
         return s;
     }
+    
+    /// <summary>
+    /// Ability to redirect tracepoint output to Unity console
+    /// </summary>
+    [UsedImplicitly]
+    public static T LogEr<T>(T s)
+    {
+        Debug.LogError(s);
+        return s;
+    }
 }
